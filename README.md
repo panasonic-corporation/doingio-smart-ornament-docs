@@ -1,6 +1,6 @@
 #  D+IO Project
 **パナソニック株式会社/FUTURE LIFE FACTORY**
-<br>D+IOプロジェクトは、人間が本来備え持っている創造力をエンパワーするプロジェクトです。
+<br>D+IOプロジェクトは、「大切な誰かへ届けたいみんなのモノづくり」を応援する活動です。
 ### [D+IO プロジェクト詳細](https://panasonic.co.jp/design/flf/works/doing_io/)
 <a href="https://panasonic.co.jp/design/flf/works/doing_io/"><img width="500px" src="https://panasonic.co.jp/design/flf/assets/img/works/doing_io/doing_io_icon.jpg"></a>
 
@@ -9,6 +9,7 @@
 ## 【D+IO PRODUCT 第4弾】 スマートオーナメント SmartOrnament
 第4弾は、季節の飾りをスマート化できる「スマートオーナメント SmartOrnament」です。
 LEDの色で明日の天気が分かります。
+
 
 **ソースコードは別リポジトリです**
 <br>[https://github.com/panasonic-corporation/doingio-smart-ornament](https://github.com/panasonic-corporation/doingio-smart-ornament)
@@ -27,11 +28,6 @@ LEDの色で明日の天気が分かります。
 空間を彩る飾りに機能を付加することで、少し生活が便利になるかもしれません。
 
 APIを変えたり光り方をカスタマイズし、あなたの欲しい情報を可視化してみましょう！
-
-# [SmartOrnament] 作り方ドキュメント
-ATOM Matrix / ATOM Liteで作るeasyHOTLINEの作り方を紹介します。
-
-**ソースコードは別リポジトリです<br>[https://github.com/panasonic-corporation/dio-smart-ornament](https://github.com/panasonic-corporation/dio-smart-ornament)**
 
   
 # 作り方
