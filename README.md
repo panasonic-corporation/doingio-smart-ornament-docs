@@ -42,7 +42,7 @@ APIを変えたり光り方をカスタマイズし、あなたの欲しい情�
 |:----:|:---------|:----|:------------------------|:----|
 |  1  | ATOM Lite | 1 |[スイッチサイエンス](https://www.switch-science.com/catalog/6262/) | 1〜2のうちどれかひとつは必須 |
 |  2  | ATOM Matrix | 1 |[スイッチサイエンス](https://www.switch-science.com/catalog/6260/) | 1〜2のうちどれかひとつは必須 |
-|  3  | USB TypeCケーブル | 1 | | M5Stack Basic, M5Stack Core2 に付属 |
+|  3  | USB TypeCケーブル | 1 | | |
 |  4  | Grove – Chainable RGB Led V2.0 | 数個 |[千石電商](https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-58AT) | 取り付けるオブジェの大きさに応じて個数を決めてください |
 |  5  | HY2.0 ケーブル (Groveケーブル) | 数個 | | Grove – Chainable RGB Led V2.0 に付属 |
 |  6  | クリスマスツリーなどのオブジェ | 1 | [東急ハンズ](https://hands.net/cate/party/christmas/christmastreeset/) | リースや正月飾りなど何でもOK |
