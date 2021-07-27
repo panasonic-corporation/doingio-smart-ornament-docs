@@ -1,8 +1,8 @@
 #  D+IO Project
 **パナソニック株式会社/FUTURE LIFE FACTORY**
-<br>D+IOプロジェクトは、人間が本来備え持っている創造力をエンパワーするプロジェクトです。
+<br>D+IOプロジェクトは、「大切な誰かへ届けたいみんなのモノづくり」を応援する活動です。
 ### [D+IO プロジェクト詳細](https://panasonic.co.jp/design/flf/works/doing_io/)
-<a href="https://panasonic.co.jp/design/flf/works/doing_io/"><img width="500px" src="https://panasonic.co.jp/design/flf/assets/img/works/doing_io/doing_io_icon.jpg"></a>
+<a href="https://panasonic.co.jp/design/flf/works/doing_io/"><img width="500px" src="https://panasonic.co.jp/design/flf/assets/img/works/doing_io/doing_io_white_main.jpg"></a>
 
 <br><br>
 
@@ -48,7 +48,7 @@ ATOM Matrix / ATOM Liteで作るSmartOrnamentの作り方を紹介します。
 |:----:|:---------|:----|:------------------------|:----|
 |  1  | ATOM Lite | 1 |[スイッチサイエンス](https://www.switch-science.com/catalog/6262/) | 1〜2のうちどれかひとつは必須 |
 |  2  | ATOM Matrix | 1 |[スイッチサイエンス](https://www.switch-science.com/catalog/6260/) | 1〜2のうちどれかひとつは必須 |
-|  3  | USB TypeCケーブル | 1 | | M5Stack Basic, M5Stack Core2 に付属 |
+|  3  | USB TypeCケーブル | 1 | | |
 |  4  | Grove – Chainable RGB Led V2.0 | 数個 |[千石電商](https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-58AT) | 取り付けるオブジェの大きさに応じて個数を決めてください |
 |  5  | HY2.0 ケーブル (Groveケーブル) | 数個 | | Grove – Chainable RGB Led V2.0 に付属 |
 |  6  | クリスマスツリーなどのオブジェ | 1 | [東急ハンズ](https://hands.net/cate/party/christmas/christmastreeset/) | リースや正月飾りなど何でもOK |
