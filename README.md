@@ -10,6 +10,8 @@
 第4弾は、季節の飾りをスマート化できる「スマートオーナメント SmartOrnament」です。
 LEDの色で明日の天気が分かります。
 
+**天気予報は気象庁のWeb公開情報を取得しています**
+
 **ソースコードは別リポジトリです**
 <br>[https://github.com/panasonic-corporation/doingio-smart-ornament](https://github.com/panasonic-corporation/doingio-smart-ornament)
 
@@ -29,7 +31,7 @@ LEDの色で明日の天気が分かります。
 APIを変えたり光り方をカスタマイズし、あなたの欲しい情報を可視化してみましょう！
 
 # [SmartOrnament] 作り方ドキュメント
-ATOM Matrix / ATOM Liteで作るeasyHOTLINEの作り方を紹介します。
+ATOM Matrix / ATOM Liteで作るSmartOrnamentの作り方を紹介します。
 
 **ソースコードは別リポジトリです<br>[https://github.com/panasonic-corporation/dio-smart-ornament](https://github.com/panasonic-corporation/dio-smart-ornament)**
 
@@ -104,50 +106,22 @@ ATOM Matrix / ATOM Liteで作るeasyHOTLINEの作り方を紹介します。
 
     <img src="images/fastLED.png" width="500px" />
 
-
-## 6 外部サービスとの連携
-ここでは[Open Weather Map API](https://openweathermap.org/)と連携する方法を記載します。
-
-1. https://home.openweathermap.org/users/sign_up にアクセスして必要事項を記入しアカウントを登録します。アカウントを持っていなければアカウントを作成してください。アカウントを持っていればそのままログインしてください。
-
-    <img src="images/owm_sign_up.png" width="500px" />
-
-1. ログインしたら https://openweathermap.org/api にアクセスし、「My API Keys」をクリックしてください。
-
-    <img src="images/owm_select_my_api_keys.png" width="500px" />
-
-1. 「API keys」タブを選択してapi keyを表示します。このあとの設定で使うのでコピーしておいてください。
-
-    <img src="images/owm_api_key.png" width="500px" />
-
-## 7 Config.h の設定
+## 6 Config.h の設定
 
 1. Arduino IDEの右上の逆三角アイコンをクリックし、Config.hを選択します。
 
     <img src="images/arduino_select_config_file.png" width="500px" />
 
 1. Arduino IDEでconfig.hを開き、下記項目を修正します。
+    - USE_ADDITIONAL_LEDS : ATOM Lite/Matrix の内蔵LEDを接続しない場合はコメントアウト（行の最初に「//を追記」）してください
     - NUM_LEDS : 接続しているLEDの数
     - MAX_BRIGHTNESS : LEDの最高輝度 (%表記)
-    - WIFI_SSID  : WiFiのSSID
-    - WIFI_PASSWORD : WiFiのパスワード
-    - API_TOKEN : 先程OpenWeatherMapで取得したAPI key
-    - API_PARAM_LAT : 取得したい天気の場所の緯度(小数点2位まで)
-    - API_PARAM_LON : 取得したい天気の場所の経度(小数点2位まで)
-    - HOURS_LATOR : 何時間後の天気を取得するか
-    - DAYS_LATOR : 何日後の天気を取得するか
-    ```
-    ※ HOURS_LATOR / DAYS_LATORについて
-      いつの天気予報を取得するかを設定できます。
-      現在の天気予報を取得する場合は HOURS_LATOR, DAYS_LATOR 共に0としてください
-      指定時間後の天気予報を取得する場合は DAYS_LATOR を0としてください
-      指定日数後の天気予報を取得する場合は HOURS_LATOR の値を0としてください
-      どちらも0でない場合は DAYS_LATOR の値を優先します
-    ```
+    - KISHOCHO_BASE_URL : 気象庁の情報取得URL
+    - KISHOCHO_PLACE_CODE : 気象庁の情報取得先で指定する場所識別コード
 
-    <img src="images/arduino_config.png" width="500px" />
+    場所識別コードは[こちら](https://www.jma.go.jp/bosai/common/const/area.json)からjsonのoffices部分を確認し、適宜変更してください。
 
-## 8 書き込み
+## 7 書き込み
 
 1. PCとデバイスをUSBケーブルで接続し、Arduino IDEの「ツール」タブを開き下記の通り設定します。
 
@@ -157,19 +131,20 @@ ATOM Matrix / ATOM Liteで作るeasyHOTLINEの作り方を紹介します。
 
     <img src="images/arduino_burn.png" width="300px" />
 
-## 9 動作確認
-- USBケーブルを電源に差すと起動します。
+## 8 動作確認
+1. USBケーブルを電源に差すと起動します。
 
-    クリスマスツリーなどのオブジェに設置して完成です！
+1. Wi-Fiに接続します。下記を参照してWi-Fiの設定をしてください。
+
+    [「Espressif Esptouch」アプリを使ったM5Stack/ESPシリーズのWi-Fiの設定方法](https://github.com/panasonic-corporation/doingio-base-docs#b-espressif-esptouchアプリを使ったm5stackespシリーズのwi-fiの設定方法)
+
+1. クリスマスツリーなどのオブジェに設置して完成です！
 
 - 色と天気の関連はデフォルトで下記のようになっています。
 
     | 天気 | 色 |
     |:----|:----|
-    |  Thunderstorm  | Yellow |
-    |  Drizzle | Cyan |
-    |  Rain | Blue |
-    |  Snow | Red |
-    |  Atmosphere | Purple |
-    |  Clear | White |
-    |  Clouds | Green |
+    | Clear | White |
+    | Clouds | Green |
+    | Rain | Blue |
+    | Snow | Red |
