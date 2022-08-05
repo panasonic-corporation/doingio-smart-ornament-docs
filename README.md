@@ -42,19 +42,7 @@ ATOM Matrix / ATOM Liteで作るSmartOrnamentの作り方を紹介します。
 
 ### 必要なパーツを用意
 
-<img width="500px" src="images/all_parts.jpg">
-
-|     | 部品名     | 個数 |  販売リンク（例）         | 備考 |
-|:----:|:---------|:----|:------------------------|:----|
-|  1  | ATOM Lite | 1 |[スイッチサイエンス](https://www.switch-science.com/catalog/6262/) | 1〜2のうちどれかひとつは必須 |
-|  2  | ATOM Matrix | 1 |[スイッチサイエンス](https://www.switch-science.com/catalog/6260/) | 1〜2のうちどれかひとつは必須 |
-|  3  | USB TypeCケーブル | 1 | | |
-|  4  | Grove – Chainable RGB Led V2.0 | 数個 |[千石電商](https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-58AT) | 取り付けるオブジェの大きさに応じて個数を決めてください |
-|  5  | HY2.0 ケーブル (Groveケーブル) | 数個 | | Grove – Chainable RGB Led V2.0 に付属 |
-|  6  | クリスマスツリーなどのオブジェ | 1 | [東急ハンズ](https://hands.net/cate/party/christmas/christmastreeset/) | リースや正月飾りなど何でもOK |
-|  7  | 配線隠し用のリボンなど | 1 | [東急ハンズ](https://hands.net/goods/4560374724705/) | |
-
-★ 参考価格（総額） : 約4,500円 前後（税込み, オブジェ抜き）
+<a href="https://www.switch-science.com/catalog/8252/"><img width="300px" src="https://d2air1d4eqhwg2.cloudfront.net/images/8252/500x500/47c53a56-8566-44cf-9ce3-438ca75cc4a4.png" /><br>スイッチサイエンスでキットを購入する</a>
 
 
 ## 2 配線 / 組み立て
